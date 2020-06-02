@@ -1,0 +1,44 @@
+// Arr based
+const sreamReducer = (state= [], action) => {
+  switch (action.type) {
+    case: EDIT_STREAM:
+    return state.map(stream => { // stream.id === action.payload.id ? action.payload : stream
+      if(stream.id === action.payload.id) {
+        return action.payload;
+      } else {
+        return stream;
+      }
+    })
+
+    default:
+      return stream
+  }
+}
+
+// Object based
+const stremReducer = (state={}, action) => {
+  switch (action.type) {
+    case EDIT_STREAM:
+    // const newState = { ...state };
+    // newState[action.payload.id] = action.payload;
+    // return newState;
+
+  OR = IDENTICAL CODES key interpolation[]
+
+    return { ...state, [action.payload.id]: action.payload }
+  }
+}
+
+// without lodash
+case FETCH_STREAMS:
+ 
+    const mapMyArray = (array, param) =>
+        Object.assign({}, ...array.map( index => ( {[index[param]]: index} )))
+ 
+    return { ...state, ...mapMyArray(action.payload, "id")}
+
+
+  case GET_STREAMS:
+  const newObject = {};
+  action.payload.forEach( (item) => newObject[item.id] = item );
+  return { ...state, ...newObject};

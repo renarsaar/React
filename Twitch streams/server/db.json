@@ -1,0 +1,22 @@
+{
+  "streams": [
+    {
+      "description": "Coding C++",
+      "title": "Gaming tutorial",
+      "userId": "1174664498441427124354",
+      "id": 1
+    },
+    {
+      "title": "Live from Tallinn",
+      "description": "",
+      "userId": "React introduction",
+      "id": 2
+    },
+    {
+      "title": "Programmatic Navigation",
+      "description": "Test",
+      "userId": "117466448844447115394",
+      "id": 3
+    }
+  ]
+}
